@@ -15,7 +15,9 @@ services:
       - wp-network
 
   php:
-    image: php:8.2-fpm
+    build:
+     context: .
+     dockerfile: dockerfile-php
     container_name: wp-php
     volumes:
       - ./src:/var/www/html
