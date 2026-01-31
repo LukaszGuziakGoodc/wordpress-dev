@@ -1,0 +1,11 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+   "scripts": {
+    "hello": "echo Hello from yarn",
+    "list": "ls -la",
+    "system-info": "uname -a && node -v"
+  }
+}
