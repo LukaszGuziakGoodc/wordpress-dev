@@ -61,3 +61,6 @@ add_filter( 'pre_http_request', function( $pre, $args, $url ) {
     }
     return $pre;
 }, 10, 3 );
+// --- 8. ustawiamy no index, jest to mocnejsze zabezpieczenie niż to w panelu,  które również wykonaliśmy ---
+define( 'WP_ENVIRONMENT_TYPE', 'development' );
+/* That's all, stop editing! */
