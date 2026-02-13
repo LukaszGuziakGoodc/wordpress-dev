@@ -164,3 +164,18 @@ if ( ! function_exists( 'twentytwentyfive_format_binding' ) ) :
 		}
 	}
 endif;
+
+// Usuwa wersję WordPressa z nagłówka strony
+remove_action('wp_head', 'wp_generator');
+
+// Usuwa wersję z plików RSS
+add_filter('the_generator', '__return_empty_string');
+
+function remove_wp_version_strings( $src ) {
+    if ( strpos( $src, 'ver=' . get_bloginfo( 'version' ) ) ) {
+        $src = remove_query_arg( 'ver', $src );
+    }
+    return $src;
+}
+add_filter( 'style_loader_src', 'remove_wp_version_strings', 9999 );
+add_filter( 'script_loader_src', 'remove_wp_version_strings', 9999 );
