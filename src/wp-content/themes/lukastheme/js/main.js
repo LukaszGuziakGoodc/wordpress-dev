@@ -1,0 +1,1 @@
+console.log("LukasTheme JS działa!");

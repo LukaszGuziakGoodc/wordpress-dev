@@ -42,3 +42,7 @@ src/wp-content/languages/
 # --- WYJĄTKI (To CHCEMY śledzić w repo) ---
 !src/wp-content/themes/lukastheme/
 !src/wp-content/plugins/wps-hide-login/
+
+# Dodaj to na samym dole .gitignore, jeśli chcesz mieć 100% pewności co do compose:
+!docker-compose.yml
+!dockerfile-php
