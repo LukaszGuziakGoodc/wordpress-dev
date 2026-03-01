@@ -1,0 +1,8 @@
+/*
+Theme Name: Lukas Theme
+Author: Lukas
+Version: 1.0
+Description: Moja pierwsza themka.
+*/
+body { background: #222; color: #fff; font-family: sans-serif; padding: 50px; }
+article { background: #333; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
